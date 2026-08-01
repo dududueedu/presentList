@@ -228,6 +228,9 @@
   .ml-1 {
     margin-left: var(--spacing);
   }
+  .ml-2 {
+    margin-left: calc(var(--spacing) * 2);
+  }
   .ml-4 {
     margin-left: calc(var(--spacing) * 4);
   }
@@ -538,6 +541,9 @@
     }
     .lg\:w-\[1024px\] {
       width: 1024px;
+    }
+    .lg\:px-2 {
+      padding-inline: calc(var(--spacing) * 2);
     }
     .lg\:px-4 {
       padding-inline: calc(var(--spacing) * 4);
