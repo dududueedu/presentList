@@ -12,39 +12,39 @@
     <header class="flex flex-col justify-center items-center w-full bg-cover z-40 bg-violet-300">
 
         <div class="flex flex-col justify-center items-center">
-            <img src="./assets/gift.svg" class="h-30 w-30 md:h-20 md:w-20 lg:h-16 lg:w-16 pt-6">
+            <img src="./assets/gift.svg" class="h-18 w-18 md:h-20 md:w-20 lg:h-30 lg:w-30 pt-6">
             <div class="flex flex-col itens-center justify-center py-2">
-                <span class="text-center text-2xl">Lista de</span>
-                <p class="text-3xl"> Sugestões de Presentes 💍💝</p>
+                <span class="text-center text-base md:text-2xl lg:text-2xl">Lista de</span>
+                <p class="text-xl sm:text-2xl md:text-3xl lg:text-3xl"> Sugestões de Presentes 💍💝</p>
             </div>
         </div>
 
         <div class="flex flex-col justify-center items-center timer-card pt- pb-3 bg-violet-400 
-        border-2 border-solid border-zinc-300 py-2 rounded-md w-[780px] h-[] my-6">
-            <h1 class="text-3xl">CONTAGEM REGRESSIVA PARA O GRANDE DIA</h1>
-            <div class="text-2xl" id="timer">00d 00h 00m 00s</div>
+        border-2 border-solid border-zinc-300 py-2 rounded-md w-[360px] sm:w-[640px] md:w-[768px] lg:w-[1024px] h-[] my-6">
+            <h1 class="text-base font-bold lg:text-3xl">CONTAGEM REGRESSIVA PARA O GRANDE DIA</h1>
+            <div class="text-base lg:text-2xl" id="timer">00d 00h 00m 00s</div>
         </div>
     </header>
 
     <container class="flex justify-center items-center bg-violet-300 pb-4" id="list">
-        <ul class="list-none flex flex-col w-[560px]">
+        <ul class="list-none flex flex-col w-[360px] lg:w-[560px]">
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-2">
                 <div>
-                    <span class="ml-4">Jogo de pratos rasos brancos – 2</span>
+                    <span class="ml-1 lg:ml-1 lg:ml-4 text-sm lg:text-base text-sm lg:text-base">Jogo de pratos rasos brancos – 2</span>
                 </div>
-                <div class="ml-auto mr-4">
+                <div class="ml-auto mr-2 lg:mr-4">
                     <button
-                        class="bg-green-200 hover:bg-green-100 text-gray-800 px-4 rounded flex justify-center items-center ml-9">
-                        <img src="./assets/gift.svg" alt="" class="h-8 w-8 md:h-4 md:w-4 lg:h-4 lg:w-4 mr-2">
+                        class="bg-green-200 hover:bg-green-100 text-gray-800 px-2 lg:px-4 rounded flex justify-center items-center ml-0 lg:ml-9">
+                        <img src="./assets/gift.svg" alt="" class="h-4 w-4 md:h-4 md:w-4 lg:h-4 lg:w-4 mr-2">
                         <a href="https://api.whatsapp.com/send?phone=5585992789315&text=Eu+gostaria+de+presentear+com+Jogo de pratos rasos"
                             target="_blank" type="button" class="btn btn-primary">
-                            <span>ESCOLHER</span>
+                            <span class="text-xs lg:text-base">ESCOLHER</span>
                         </a>
                     </button>
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Jogo de pratos fundos brancos – 2</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -59,7 +59,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Jogo de pratos de sobremesa brancos – 2</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -74,7 +74,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Faqueiro – 2</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -89,7 +89,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Jogo de talheres – 3</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -104,7 +104,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Conjunto de copos – 5</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -119,7 +119,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Taças para água – 2</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -134,7 +134,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Taças para vinho – 2</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -149,7 +149,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Xícaras de café – 2 jogos</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -164,7 +164,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Xícaras de chá – 2</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -179,7 +179,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Jogo americano – 8</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -194,7 +194,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Sousplats – 8</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -209,7 +209,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Toalhas de mesa – 3</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -224,7 +224,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Travessas de vidro – 4</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -239,7 +239,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Assadeiras – 4</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -254,7 +254,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Formas para bolo – 3</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -269,7 +269,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Forma para pizza – 2</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -284,7 +284,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Boleira de vidro – 2</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -299,7 +299,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Potes de vidro com tampa – 8</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -314,7 +314,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Potes plásticos – 10</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -329,7 +329,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Jogo de potes herméticos – 2</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -344,7 +344,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Jarras – 3</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -359,7 +359,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Garrafas térmicas – 2</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -374,7 +374,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Tigelas (bowls) – 6</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -389,7 +389,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Saladeira – 2</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -404,7 +404,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Tábuas de corte – 3</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -419,7 +419,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Kit de facas – 2</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -434,7 +434,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Descascador de legumes – 2</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -449,7 +449,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Conchas – 2</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -464,7 +464,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Colheres de pau – 2</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -479,7 +479,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Liquidificador – 1</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -494,7 +494,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Batedeira – 1</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -509,7 +509,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Mixer – 1</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -524,7 +524,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Cafeteira – 1</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -539,7 +539,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Sanduicheira – 1</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -554,7 +554,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Torradeira – 1</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -569,7 +569,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Air Fryer – 1</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -584,7 +584,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Panela elétrica de arroz – 1</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -599,7 +599,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Chaleira elétrica – 1</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -614,7 +614,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Espremedor de frutas – 1</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -629,7 +629,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Jogo de panelas – 2</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -644,7 +644,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Frigideiras – 3</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -659,7 +659,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Panela de pressão – 2</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -674,7 +674,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Cuscuzeira – 2</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -689,7 +689,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Panela wok – 1</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -704,7 +704,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>⁠Jogo de cama casal – 4</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -719,7 +719,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Edredons – 2</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -734,7 +734,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Cobertores – 2</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -749,7 +749,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Travesseiros – 4</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -764,7 +764,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Protetor de colchão – 1</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -779,7 +779,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Cortinas – 4</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -794,7 +794,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Toalhas de banho – 8</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -809,7 +809,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Toalhas de rosto – 8</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -824,7 +824,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Tapetes para banheiro – 3⁠</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -839,7 +839,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Mop – 1</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -854,7 +854,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Ferro de passar – 1</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -869,7 +869,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Tábua de passar – 1</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -884,7 +884,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Varal de chão – 1</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -899,7 +899,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Almofadas decorativas – 6</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -914,7 +914,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Espelho decorativo – 2</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -929,7 +929,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Quadros decorativos – 4</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -944,7 +944,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Vasos decorativos – 4⁠</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -959,7 +959,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Cesta de café da manhã – 2</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -974,7 +974,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Vale-presente – 20</span>
                 </div>
                 <div class="ml-auto mr-4">
@@ -989,7 +989,7 @@
                 </div>
             </li>
             <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
-                <div class="ml-4">
+                <div class="ml-1 lg:ml-4 text-sm lg:text-base">
                     <span>Pix (qualquer valor) – 30</span>
                 </div>
                 <div class="ml-auto mr-4">
