@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Sugestões</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body>
+    <header class="flex flex-col justify-center items-center w-full bg-cover z-40 bg-violet-300">
+
+        <div class="flex flex-col justify-center items-center">
+            <img src="./assets/gift.svg" class="h-30 w-30 md:h-20 md:w-20 lg:h-16 lg:w-16 pt-6">
+            <div class="flex flex-col itens-center justify-center py-2">
+                <span class="text-center text-2xl">Lista de</span>
+                <p class="text-3xl"> Sugestões de Presentes 💍💝</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col justify-center items-center timer-card pt- pb-3 bg-violet-400 
+        border-2 border-solid border-zinc-300 py-2 rounded-md w-[780px] h-[] my-6">
+            <h1 class="text-3xl">CONTAGEM REGRESSIVA PARA O GRANDE DIA</h1>
+            <div class="text-2xl" id="timer">00d 00h 00m 00s</div>
+        </div>  
+    </header>
+
+    <container class="flex justify-center items-center bg-violet-300" id="list">
+        <ul class="list-none flex flex-col w-[560px]">
+            <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-2">
+                <div>
+                    <span class="ml-4">Jogo de pratos rasos</span>
+                </div>
+                <div class="ml-auto mr-4">
+                    <button
+                        class="bg-green-200 hover:bg-green-100 text-gray-800 px-4 rounded flex justify-center items-center ml-9">
+                        <img src="./assets/gift.svg" alt="" class="h-8 w-8 md:h-4 md:w-4 lg:h-4 lg:w-4 mr-2">
+                        <a href="https://api.whatsapp.com/send?phone=5585992789315&text=Eu+gostaria+de+presentear+com+Jogo de pratos rasos"
+                            target="_blank" type="button" class="btn btn-primary">
+                            <span>ESCOLHER</span>
+                        </a>
+                    </button>
+                </div>
+            </li>
+            <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1">
+                <div class="ml-4">
+                    <span>Jogo de pratos fundos</span>
+                </div>
+                <div class="ml-auto mr-4">
+                    <button
+                        class="bg-green-200 hover:bg-green-100  text-gray-800 px-4 rounded flex justify-center items-center ml-9">
+                        <img src="./assets/gift.svg" alt="" class="h-8 w-8 md:h-4 md:w-4 lg:h-4 lg:w-4 mr-2">
+                        <a href="https://api.whatsapp.com/send?phone=5585992789315&text=Eu+gostaria+de+presentear+com+Jogo de pratos fundos"
+                            target="_blank" type="button" class="btn btn-primary">
+                            ESCOLHER
+                        </a>
+                    </button>
+                </div>
+            </li>
+            <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1">
+                <div class="ml-4">
+                    <span>Jogo de pratos de sobremesa</span>
+                </div>
+                <div class="ml-auto mr-4">
+                    <button
+                        class="bg-green-200  hover:bg-green-100  text-gray-800 px-4 rounded flex justify-center items-center ml-9">
+                        <img src="./assets/gift.svg" alt="" class="h-8 w-8 md:h-4 md:w-4 lg:h-4 lg:w-4 mr-2">
+                        <a href="https://api.whatsapp.com/send?phone=5585992789315&text=Eu+gostaria+de+presentear+com+Jogo de pratos de sobremesa"
+                            target="_blank" type="button" class="btn btn-primary">
+                            ESCOLHER
+                        </a>
+                    </button>
+                </div>
+            </li>
+            <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1">
+                <div class="ml-4">
+                    <span>Faqueiro</span>
+                </div>
+                <div class="ml-auto mr-4">
+                    <button
+                        class="bg-green-200  hover:bg-green-100  text-gray-800 px-4 rounded flex justify-center items-center ml-9">
+                        <img src="./assets/gift.svg" alt="" class="h-8 w-8 md:h-4 md:w-4 lg:h-4 lg:w-4 mr-2">
+                        <a href="https://api.whatsapp.com/send?phone=5585992789315&text=Eu+gostaria+de+presentear+com+Faqueiro"
+                            target="_blank" type="button" class="btn btn-primary">
+                            ESCOLHER
+                        </a>
+                    </button>
+                </div>
+            </li>
+            <li class="flex flex-row border-2 border-solid py-2 rounded-md mt-1 ">
+                <div class="ml-4">
+                    <span>Jogo de talheres</span>
+                </div>
+                <div class="ml-auto mr-4">
+                    <button
+                        class="bg-green-200 hover:bg-green-100 text-gray-800 px-4 rounded flex justify-center items-center ml-9">
+                        <img src="./assets/gift.svg" alt="" class="h-8 w-8 md:h-4 md:w-4 lg:h-4 lg:w-4 mr-2">
+                        <a href="https://api.whatsapp.com/send?phone=5585992789315&text=Eu+gostaria+de+presentear+com+Jogo de talheres"
+                            target="_blank" type="button" class="btn btn-primary">
+                            ESCOLHER
+                        </a>
+                    </button>
+                </div>
+            </li>
+            <!-- ... -->
+        </ul>
+    </container>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
