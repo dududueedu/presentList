@@ -17,7 +17,7 @@ formulario.addEventListener('submit', function (evento) {
 
     if (opcao == "sim") {
         const href = "https://api.whatsapp.com/send?phone=5585992789315&text=";
-        const novo = "" + nome + "+confirmo+minha+presença+e+levarei+" + numero_acompanhantes + "+acompanhantes!";
+        const novo = "Eu+gostaria+de+" + "+confirmar+minha+presença+e+levarei+" + numero_acompanhantes + "+acompanhantes!"+"("+nome+")";
 
         const newlink = href + novo
         console.log(newlink)

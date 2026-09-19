@@ -3,6 +3,7 @@
     "@tailwindcss/cli": "^4.3.3",
     "tailwindcss": "^4.3.3"
   }, "scripts": {
-    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "dev2": "npx tailwindcss -i ./src/pages/input.css -o ./src/pages/output.css --watch"
   }
 }
