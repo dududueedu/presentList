@@ -4,38 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Sugestões</title>
+    <title>Confirmação de Presença</title>
     <link rel="stylesheet" href="./output.css">
 </head>
 
 <body>
     <header class="flex flex-col justify-center items-center w-full bg-cover z-40 bg-violet-300">
 
-        <div class="flex flex-col justify-center items-center mt-10">
-            <div class="flex flex-col itens-center justify-center py-2 pt-6 text-center">
-                <span class="text-base md:text-2xl lg:text-2xl">💍 Confirmação de Presença</span>
-                <p class="text-xl sm:text-2xl md:text-3xl lg:text-3xl">Suele & Eduardo</p>
+        <div class="flex flex-col justify-center items-center pt-12">
+            <img class="w-24 h-24" src="./../assets/bridal.png">
+            <div class="flex flex-col itens-center justify-center py-2 text-center">
+                <span class="text-xl md:text-3xl lg:text-4xl">Confirmação de Presença</span>
+                <p class="text-2xl sm:text-2xl md:text-3xl lg:text-4xl">Suele & Eduardo</p>
             </div>
-        </div>
-
-        <div class="flex w-[360px] sm:w-[640px] md:w-[768px] lg:w-[1024px] h-[] mt-4">
-            <span class="text-justify text-sm italic">
-                É com grande alegria que gostaríamos de contar você para celebrar conosco um dos momentos mais
-                importantes de nossas vidas. Sua presença tornará esse dia ainda mais especial. Pedimos, por gentileza,
-                que confirme sua presença.
-            </span>
         </div>
 
         <div
             class="flex flex-col justify-center items-center timer-card bg-violet-400 
-        border-2 border-solid border-zinc-300 py-2 rounded-md w-[360px] sm:w-[640px] md:w-[768px] lg:w-[1024px] h-[] my-4">
-            <h1 class="text-base font-bold lg:text-3xl">CONTAGEM REGRESSIVA PARA O GRANDE DIA</h1>
+        border-2 border-solid border-zinc-300 py-2 rounded-md w-[360px] sm:w-[640px] md:w-[768px] lg:w-[1024px] h-[] my-2">
+            <h1 class="text-sm font-bold lg:text-3xl">CONTAGEM REGRESSIVA PARA O GRANDE DIA</h1>
             <div class="text-base lg:text-2xl" id="timer">00d 00h 00m 00s</div>
+        </div>
+
+        <div class="flex w-[360px] sm:w-[640px] md:w-[768px] lg:w-[1024px] h-[] mt-4">
+            <span class="text-justify text-sm italic">
+                Sua presença tornará esse dia ainda mais especial. Pedimos, por gentileza,
+                que confirme sua presença para que a gente possa preparar tudo.
+            </span>
         </div>
 
     </header>
 
-    <container class="flex justify-center items-center bg-violet-300 pb-4" id="list">
+    <container
+        class="h-[400px] sm:h-[300px] md:h-[400px] lg:h-[500px] flex justify-center items-center bg-violet-300 pb-4"
+        id="list">
         <form class="max-w-md mx-auto" id="form">
             <div class="">
                 <div class="relative z-0 w-full mb-5 group">
@@ -47,20 +49,25 @@
                         seu nome
                     </label>
                 </div>
-            </div><div class="form-check">
+            </div>
+            <div class="form-check">
                 <h1><b>Você estará conosco?</b></h1>
                 <input class="form-check-input" type="radio" name="radio_op" value="sim" id="flexRadioDefault1">
                 <label class="form-check-label" for="flexRadioDefault1">
                     Sim, estarei!
                 </label>
             </div>
-            <div class="form-check mb-4">
+            <div class="form-check">
                 <input class="form-check-input" type="radio" name="radio_op" value="nao" id="flexRadioDefault2">
                 <label class="form-check-label" for="flexRadioDefault2">
                     Infelizmente não vou poder.
                 </label>
             </div>
 
+            <div class="mb-4">
+                <span class="text-sm">Caso você não for, preencha</span><p class="text-sm"> abaixo com o número zero.</p>
+            </div>
+            
             <div class="">
                 <div class="relative z-0 w-full mb-5 group">
                     <input type="number" name="num_acompanhantes" id="num_acompanhantes_id"
@@ -73,16 +80,18 @@
             </div>
 
 
-            <button type="submit">
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none"> 
-                        ENVIAR CONFIRMAÇÃO ❤️
-                    </button>
+            <button type="submit" class="pb-8">
+                <button
+                    class="bg-violet-400  hover:bg-blue-700 text-white font-bold box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
+                    ENVIAR CONFIRMAÇÃO ❤️
+                </button>
             </button>
         </form>
 
     </container>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!--Chamada para o formulario-->
+    <script src="./../script.js"></script> <!--Chamada para funcionar o cronometro-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
