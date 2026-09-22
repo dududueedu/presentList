@@ -1,4 +1,6 @@
 const formulario = document.getElementById('form');
+const img = new Image();
+img.src = './../assets/cute.png';
 
 formulario.addEventListener('submit', function (evento) {
     // Impede a página de recarregar
@@ -32,13 +34,19 @@ formulario.addEventListener('submit', function (evento) {
             confirmButtonText: `<a href="${newlink}" target="_blank">CONFIRMAR</a>`,
         });
     } else {
+        const href = "https://api.whatsapp.com/send?phone=5585992789315&text=";
+        const novo = "Oi, gostaria de dizer que infelizmente não vou poder prestigiar esse momento com vocês."+"+("+nome+")";
+
+        const newlink = href + novo;
+        
         Swal.fire({
-            imageUrl: "",
-            imageWidth: 300,
+            imageUrl: img.src,
+            imageWidth: 150,
             imageHeight: 150,
             imageAlt: "Custom image",
             title: "Poxa vida",
             text: "Sentiremos sua falta!",
+            confirmButtonText: `<a href="${newlink}" target="_blank">ENVIAR</a>`,
         });
     }
 
@@ -46,5 +54,3 @@ formulario.addEventListener('submit', function (evento) {
     const objetoDados = Object.fromEntries(dados.entries());
     console.log(objetoDados);
 });
-//É com grande alegria que gostaríamos de contar você para celebrar conosco um dos momentos mais
-                //importantes de nossas vidas.
